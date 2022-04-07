@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss/index.css">
+    <title>Anime</title>
+</head>
+<body>
+ <!--create a header and links to other pages-->
+    <header class="head1">Anime</header>
+
+    <button id="hide">hide and restore all images</button>
+    <button id="animation">Animation</button>
+
+    <section class="head2">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="index.html">Home</a>
+              <a href="aboutme.html">About</a>
+              <a href="contact.html">Contact</a>
+              <a href="saveForLater.html">Save For Later</a>
+            </div>
+          </div>
+    </section><br>
+    
+ <!--create a form with radio and a submit button-->
+    <div class="contactme"><h1>Contact Me</h1>
+
+    <form action="mailto:denver.naicker108@gmail.com"  method="post">
+        <div>
+            <label for="firstname">Name</label>
+            <input type="text" id="firstname" placeholder="Enter your Name">
+        </div>
+        <div>
+            <label for="lastname">Surname</label>
+            <input type="text" id="lastname" placeholder="Enter your Surname">
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" placeholder="Enter your age">
+        </div>
+        <div>
+            Gender
+           <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+           </div>
+           <div>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+        </div>
+        </div>
+        <div>
+            <label for="comment">Comment</label><br>
+            <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+    
+    <section class="subhead">
+        <div><img src="../imgs/my_fav.jpg" alt="fav"></div><br>
+    </section>
+
+    <form>
+    <input type="text" id="comment-box" placeholder="Enter comment">
+    <button type="button" id="post">Post</button>
+    <ul id="unordered">
+       
+   </ul>
+</form>
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../myWebsite.js"></script>
+</body>
+</html>

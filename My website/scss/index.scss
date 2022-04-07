@@ -1,0 +1,182 @@
+$main-color: #4b42d4;
+
+body {
+  background-color: rgb(2, 2, 2);
+  color: white;
+}
+
+.head1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  background-color: #7c47a7;
+  margin-bottom: 20px;
+}
+
+.head2 {
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+  justify-content: center;
+  .home {
+    margin: 20px;
+  }
+  .about {
+    margin: 20px;
+  }
+  .contact {
+    margin: 20px;
+  }
+}
+
+.subhead1 {
+  display: flex;
+  text-align: center;
+  h1 {
+    text-align: center;
+  }
+}
+
+.image1 {
+  margin-right: 20px;
+}
+
+.para1 {
+  margin: auto;
+  font-size: 25px;
+  h1 {
+    font-size: 50px;
+  }
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: black;
+}
+
+.middle1 {
+  display: block;
+  text-align: center;
+  background-color: $main-color;
+}
+
+.middle {
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  margin: 20px, 0;
+}
+
+.footer {
+  text-align: center;
+  background-color: $main-color;
+}
+/*about me page*/
+.aboutmeimg {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_aboutme {
+  text-align: center;
+}
+
+.subhead2 {
+  text-align: center;
+  .list {
+    list-style-type: none;
+  }
+  .me {
+    font-size: 20px;
+  }
+}
+.about_me {
+  background-color: $main-color;
+}
+
+table,
+th,
+td {
+  border: 2px rgb(42, 145, 17) solid;
+  height: 50px;
+  margin: auto;
+}
+
+.table_head {
+  text-decoration: underline;
+}
+
+.links {
+  color: rgb(80, 151, 245);
+}
+
+label {
+  width: 75px;
+  display: inline-block;
+}
+/*contact me page*/
+.contactme {
+  text-align: center;
+}
+
+// comment box SCSS
+#comment-box {
+  height: 30px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+#post:hover {
+  background-color: deeppink;
+  border-radius: 5px;
+}
+
+// SCSS for the dropdown menu
+.dropbtn {
+  background-color: #f78d37;
+  color: white;
+  width: 175px;
+  padding: 20px;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 175px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}

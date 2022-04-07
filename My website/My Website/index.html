@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss/index.css">
+    <title>Anime</title>
+</head>
+<!--create a header and links to other pages-->
+<body>
+  <header class="head1">Anime</header>
+  <button id="hide">hide and restore all images</button>
+  <button id="animation">Animation</button>
+
+    <section class="head2">
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Menu</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="saveForLater.html">Save For Later</a>
+          </div>
+        </div>
+    </section><br>
+    
+    <!--add a picture of all anime and describe what is anime-->
+    <section class="subhead1">
+        <div class="image1"><img src="../imgs/background.jpg" alt=""></div>
+        <div class="para1">
+          <h1>So what is Anime?</h1>
+        <p>So you're probable thinking Ben-10 or Teen Titans, <strong>You're Wrong</strong> anime is along the lines of Dragonballz and Naruto to name a few.
+        Anime (pronounced AH-nee-may ) is a term for a style of Japanese comic book and video cartoon animation in which the main characters have large doe-like eyes. ... 
+        There is a few shows that shaped the way that anime is the way it is now, they are known as the big 5. The big 5 will be displayed below.<br><br>
+        To learn more about anime, <a class="links" href="https://en.wikipedia.org/wiki/Anime">click here</a></p>
+        </div>
+    </section>
+
+    <!--add pictures of different anime and set it in line-->
+    <section class="banner">
+      <div>
+        <img src="../imgs/hunter.jpg" alt="hunter">
+        <button onclick="saveForLater(event)">save for later</button>
+       <button onclick= "imageLike(event)" aria-label="Aria Name">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16" >
+          <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+        </svg>
+      </button>
+      </div>
+      
+      <div>
+        <img src="../imgs/black.jfif" alt="clover">
+        <button onclick="saveForLater(event)">save for later</button>
+        <button onclick= "imageLike(event)" aria-label="Aria Name">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16" >
+           <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+         </svg>
+       </button>
+      </div>
+
+      <div>
+        <img src="../imgs/naruto.jfif" alt="naruto">
+        <button onclick="saveForLater(event)">save for later</button>
+        <button onclick= "imageLike(event)" aria-label="Aria Name">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16" >
+           <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+         </svg>
+       </button>
+      </div>
+
+      <div>
+        <img src="../imgs/onepiece.jfif" alt="onepiece">
+        <button onclick="saveForLater(event)">save for later</button>
+        <button onclick= "imageLike(event)" aria-label="Aria Name">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16" >
+           <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+         </svg>
+       </button>
+      </div>
+
+      <div>
+        <img src="../imgs/dbz.jfif" alt="dbz">
+        <button onclick="saveForLater(event)">save for later</button>
+        <button onclick= "imageLike(event)" aria-label="Aria Name">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16" >
+           <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+         </svg>
+       </button>
+      </div>
+
+      <div>
+        <img src="../imgs/bleach.jfif" alt="bleach">
+        <button onclick="saveForLater(event)">save for later</button>
+        <button onclick= "imageLike(event)" aria-label="Aria Name">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16" >
+           <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+         </svg>
+       </button>
+      </div>
+
+      <div>
+        <img src="../imgs/fairytail.jfif" alt="fairytail">
+        <button onclick="saveForLater(event)">save for later</button>
+        <button onclick= "imageLike(event)" aria-label="Aria Name">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 10 16" >
+           <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+         </svg>
+       </button>
+      </div>
+
+      <div>
+        <img src="../imgs/death.jfif" alt="note">
+        <button onclick="saveForLater(event)">save for later</button>
+        <button onclick= "imageLike(event)" aria-label="Aria Name">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16" >
+           <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+         </svg>
+       </button>
+      </div>
+
+      <div>
+        <img src="../imgs/darling.jfif" alt="darling">
+        <button onclick="saveForLater(event)">save for later</button>
+        <button onclick= "imageLike(event)" aria-label="Aria Name">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16" >
+           <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+         </svg>
+       </button>
+      </div>
+
+      <div>
+        <img src="../imgs/onepunch.jfif" alt="man">
+        <button onclick="saveForLater(event)">save for later</button>
+        <button onclick= "imageLike(event)" aria-label="Aria Name">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16" >
+           <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+         </svg>
+       </button>
+      </div>
+
+      <div>
+        <img src="../imgs/haikyuu.jfif" alt="volley">
+        <button onclick="saveForLater(event)">save for later</button>
+        <button onclick= "imageLike(event)" aria-label="Aria Name">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16" >
+           <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+         </svg>
+       </button>
+      </div>
+    </section>
+
+    <!--write up about the big 5 and create links to wikipedia pages to give more information-->
+    <h1 class="middle1">The Big 5</h1>
+    <section class="middle">
+      <div><img src="../imgs/DBZname.png" alt="bigfive1"></div>
+       <p>Son Goku, the world's most powerful fighter and guardian of justice, must protect the Earth from the Saiyan Warriors working under the tyrannical space warlord Frieza.<br>
+         Against all odds, Goku must team up with his longtime nemesis Piccolo to save everyone he loves from these new, unpredictable threats to humanity<br>
+         To know more about Dragonballz and the different arcs, <a class="links" href="https://en.wikipedia.org/wiki/Dragon_Ball_Z">click here</a></p>
+
+      <div><img src="../imgs/bleachname2.jpg" alt="bigfive2"></div>
+        <p>High school student Kurosaki Ichigo is unlike any ordinary kid. Why? Because he can see ghosts. Ever since a young age, he's been able to see spirits from the afterlife.<br>
+          Ichigo's life completely changes one day when he and his two sisters are attacked by an evil, hungry and tormented spirit known as a Hollow.<br>
+          Right in the nick of time, Ichigo and his siblings are aided by a Shinigami (Death God) named Kuchiki Rukia, whose responsibility it is to send good spirits (Pluses)<br>
+          to the afterlife known as Soul Society, and to purify Hollows and send them up to Soul Society. But during the fight against the Hollow, Rukia is injured and must transfer her powers to Ichigo.<br>
+          With this newly acquired power, so begins Kurosaki Ichigo's training and duty as a Shinigami to maintain the balance between the world of the living and the world of the dead...<br>
+          To know more about Bleach, <a class="links" href="https://en.wikipedia.org/wiki/Bleach_(TV_series)">click here</a></p>
+
+      <div><img src="../imgs/fairytailname.jfif" alt="bigfive3"></div>
+        <p>Lucy, a 17 year old girl, sets out on journey to become a full-fledged wizard and joins the strongest and most (in) famous guild FAIRY TAIL where she meets Natsu,<br>
+          Happy, Gray and Erza, who treat her more like family than friends. This epic series takes us through all the dangers that<br>
+          the members of fairy tail face and eventually overcome through mutual love and friendship.<br>
+          To know about fairy tail, <a class="links" href="https://en.wikipedia.org/wiki/Fairy_Tail">click here</a></p>
+           
+      <div><img src="../imgs/narutoname.jfif" alt="bigfive4"></div>
+        <p>Many years ago, in the hidden village of Konoha, lived a great demon fox. When it swung one of it's nine tails, a tsunami occurred.<br>
+          The fourth hokage sealed this demon fox inside a boy in exchange for his own life. Naruto was that boy, and he grew up with no family,<br>
+          and the villagers hated him thinking that he himself was the demon fox. Naruto's dream is to become Hokage, and have the villagers acknowledge him<br>
+          To know about naruto, <a class="links" href="https://en.wikipedia.org/wiki/Naruto">click here</a></p>
+
+      <div><img src="../imgs/onepiecename.jfif" alt="bigfive5"></div>
+        <p>There once lived a pirate named Gol D. Roger. He obtained wealth, fame, and power to earn the title of Pirate King.<br>
+          When he was captured and about to be executed, he revealed that his treasure called One Piece was hidden somewhere at the Grand Line.<br>
+          This made all people set out to search and uncover the One Piece treasure, but no one ever found the location of Gol D. Roger's treasure,and<br>
+          the Grand Line was too dangerous a place to overcome.Twenty-two years after Gol D. Roger's death, a boy named Monkey D. Luffy decided to become<br>
+          a pirate and search for Gol D. Roger's treasure to become the next Pirate King.<br>
+          To know about Onepiece, <a class="links" href="https://en.wikipedia.org/wiki/One_Piece">click here</a></p>
+    </section>
+
+    <!--create a resources table for free and subscription websites to watch anime-->
+    <h1 class="footer">Resources</h1>
+    <table class="refer">
+      <tr class="table_head">
+        <th>Website name</th>
+        <th>Website</th>
+        <th>Free or Subcription</th>
+      </tr>
+      <tr>
+        <td>Animixplay</td>
+        <td><a class="links" href="https://animixplay.to/">Click Here</a></td>
+        <td>Free</td>
+      </tr>
+      <tr>
+        <td>Anime kisa</td>
+        <td><a class="links" href="https://animekisa.tv/">Click Here</a></td>
+        <td>Free</td>
+      </tr>
+      <tr>
+        <td>Crunchyroll</td>
+        <td><a class="links" href="https://www.crunchyroll.com/">Click Here</a></td>
+        <td>Subscription</td>
+      </tr>
+    </table>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../myWebsite.js"></script>
+</body>
+</html>
